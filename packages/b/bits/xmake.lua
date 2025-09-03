@@ -4,7 +4,7 @@
     set_description("Library for bit manipulation")
     set_license("BSL-1.0")
 
-    add_urls("https://github.com/ttldtor/bits.git", {branch = "default"})
+    add_urls("https://github.com/ttldtor/bits.git")
 
     on_install(function (package)
         os.cp("include", package:installdir())
