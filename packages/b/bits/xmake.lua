@@ -1,4 +1,7 @@
-﻿package("bits")
+﻿-- Copyright (c) 2025 ttldtor.
+-- SPDX-License-Identifier: BSL-1.0
+
+package("bits")
     set_kind("library", {headeronly = true})
     set_homepage("https://github.com/ttldtor/bits")
     set_description("Library for bit manipulation")
@@ -8,6 +11,7 @@
              "https://github.com/ttldtor/bits.git")
 
     add_versions("v0.1.0", "d2fdf2f63f62a1e9f77a0c228fe4ad0234a6d4d8a4e4f24ffb6c478d2c7a876f")
+    add_versions("v0.2.0", "463bdfc86486185948f5abf800b5d74992b3c032465da068dd11f6485d69a726")
 
     on_install(function (package)
         os.cp("include/bits", package:installdir("include"))
